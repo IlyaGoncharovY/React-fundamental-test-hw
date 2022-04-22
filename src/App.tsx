@@ -18,6 +18,9 @@ import {ControlledInput2} from "./components/Input/ControlledInput2";
 import {ControlledSelect} from "./components/Input/ControlledSelect";
 import {Select} from "./components/Input/Select";
 import {UncontrolledAccordion} from "./components/AccordionSelfControlled/UncontrolledAccordion";
+import {Example1} from "./components/TestReactMemo/TestReactMemo";
+import {UseMemoTest} from "./components/UseMemo/UseMemoTest";
+import {Example2UseMemoForReact} from "./components/UseMemo/UseMemoToReactMemo";
 
 type FilterPropsType = "all" | "dollar" | "ruble"
 const App = () => {
@@ -116,6 +119,9 @@ const App = () => {
                         {value: "2", title: "Moscow"},
                         {value: "3", title: "Kiev"}
                     ]}/>
+            <Example1/>
+            <UseMemoTest/>
+            <Example2UseMemoForReact/>
 
 
             <ul>
