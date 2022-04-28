@@ -20,7 +20,7 @@ import {Select} from "./components/Input/Select";
 import {UncontrolledAccordion} from "./components/AccordionSelfControlled/UncontrolledAccordion";
 import {Example1} from "./components/TestReactMemo/TestReactMemo";
 import {UseMemoTest} from "./components/UseMemo/UseMemoTest";
-import {Example2UseMemoForReact} from "./components/UseMemo/UseMemoToReactMemo";
+import {Example2UseMemoForReact, LikeUseCallback} from "./components/UseMemo/UseMemoUseCallBackToReactMemo";
 
 type FilterPropsType = "all" | "dollar" | "ruble"
 const App = () => {
@@ -107,21 +107,34 @@ const App = () => {
 
         <div>
             <UncontrolledAccordion titleValue={"users"}/>
+        <hr/>
             <UncontrolledInput/>
+            <hr/>
             <ControlledInput/>
+            <hr/>
             <UncontrolledInputButton/>
+            <hr/>
             <ControlledInput2/>
+            <hr/>
             <ControlledCheckbox/>
+            <hr/>
             <ControlledSelect/>
+            <hr/>
             <Select value={value} callBack={setValue}
                     items={[
                         {value: "1", title: "Minsk"},
                         {value: "2", title: "Moscow"},
                         {value: "3", title: "Kiev"}
                     ]}/>
+            <hr/>
             <Example1/>
+            <hr/>
             <UseMemoTest/>
+            <hr/>
             <Example2UseMemoForReact/>
+            <hr/>
+            <LikeUseCallback/>
+
 
 
             <ul>
