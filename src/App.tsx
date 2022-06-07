@@ -21,6 +21,7 @@ import {UncontrolledAccordion} from "./components/AccordionSelfControlled/Uncont
 import {Example1} from "./components/TestReactMemo/TestReactMemo";
 import {UseMemoTest} from "./components/UseMemo/UseMemoTest";
 import {Example2UseMemoForReact, LikeUseCallback} from "./components/UseMemo/UseMemoUseCallBackToReactMemo";
+import UseStateTest from "./components/UseState/UseStateTest";
 
 type FilterPropsType = "all" | "dollar" | "ruble"
 const App = () => {
@@ -134,6 +135,7 @@ const App = () => {
             <Example2UseMemoForReact/>
             <hr/>
             <LikeUseCallback/>
+            <hr/>
 
 
 
@@ -160,6 +162,8 @@ const App = () => {
             <h1>{a}</h1>
             <button onClick={onClickHandler}> number</button>
             <button onClick={DefaultValue}> 0</button>
+            <hr/>
+            <UseStateTest/>
 
 
             {/* <NewButton name={"MyYouTubeChanel-1"} callBack={()=>Button1Foo("vasilii", 21, "mOSCOV")}/>*/}
