@@ -23,6 +23,8 @@ import {UseMemoTest} from "./components/UseMemo/UseMemoTest";
 import {Example2UseMemoForReact, LikeUseCallback} from "./components/UseMemo/UseMemoUseCallBackToReactMemo";
 import UseStateTest from "./components/UseState/UseStateTest";
 import {UseEffectTest} from "./components/useEffectTest/UseEffectTest";
+import {SetTimeOutTest} from "./components/useEffectTest/SetTimeOutTest";
+import {Clock} from "./components/useEffectTest/Clock/Clock";
 
 type FilterPropsType = "all" | "dollar" | "ruble"
 const App = () => {
@@ -168,6 +170,9 @@ const App = () => {
             <hr/>
             <UseEffectTest/>
             <hr/>
+            <SetTimeOutTest/>
+            <hr/>
+            <Clock/>
 
 
             {/* <NewButton name={"MyYouTubeChanel-1"} callBack={()=>Button1Foo("vasilii", 21, "mOSCOV")}/>*/}
