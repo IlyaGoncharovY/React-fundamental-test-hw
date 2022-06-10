@@ -22,6 +22,7 @@ import {Example1} from "./components/TestReactMemo/TestReactMemo";
 import {UseMemoTest} from "./components/UseMemo/UseMemoTest";
 import {Example2UseMemoForReact, LikeUseCallback} from "./components/UseMemo/UseMemoUseCallBackToReactMemo";
 import UseStateTest from "./components/UseState/UseStateTest";
+import {UseEffectTest} from "./components/useEffectTest/UseEffectTest";
 
 type FilterPropsType = "all" | "dollar" | "ruble"
 const App = () => {
@@ -164,6 +165,9 @@ const App = () => {
             <button onClick={DefaultValue}> 0</button>
             <hr/>
             <UseStateTest/>
+            <hr/>
+            <UseEffectTest/>
+            <hr/>
 
 
             {/* <NewButton name={"MyYouTubeChanel-1"} callBack={()=>Button1Foo("vasilii", 21, "mOSCOV")}/>*/}
