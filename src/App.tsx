@@ -25,6 +25,8 @@ import UseStateTest from "./components/UseState/UseStateTest";
 import {UseEffectTest} from "./components/useEffectTest/UseEffectTest";
 import {SetTimeOutTest} from "./components/useEffectTest/SetTimeOutTest";
 import {Clock} from "./components/useEffectTest/Clock/Clock";
+import {UseEffectTest2} from "./components/useEffectTest/useEffecttest2/UseEffectTest2";
+import {KeysTracker} from "./components/useEffectTest/useEffecttest2/KeysTracker";
 
 type FilterPropsType = "all" | "dollar" | "ruble"
 const App = () => {
@@ -173,6 +175,10 @@ const App = () => {
             <SetTimeOutTest/>
             <hr/>
             <Clock title={"analog"}/>
+            <hr/>
+            <UseEffectTest2/>
+            <hr/>
+            <KeysTracker/>
 
 
             {/* <NewButton name={"MyYouTubeChanel-1"} callBack={()=>Button1Foo("vasilii", 21, "mOSCOV")}/>*/}
