@@ -172,7 +172,7 @@ const App = () => {
             <hr/>
             <SetTimeOutTest/>
             <hr/>
-            <Clock/>
+            <Clock title={"analog"}/>
 
 
             {/* <NewButton name={"MyYouTubeChanel-1"} callBack={()=>Button1Foo("vasilii", 21, "mOSCOV")}/>*/}

@@ -5,7 +5,7 @@ export const SetTimeOutTest = () => {
     let [fake, setFake] = useState(1)
     let [counter, setCounter] = useState(1)
 
-    console.log("test1")
+    // console.log("test1")
 
     // useEffect(() => {
     //     console.log("useEff test всегда рендер")
@@ -29,7 +29,7 @@ export const SetTimeOutTest = () => {
 
     useEffect(()=>{
        setInterval(()=>{
-            console.log("tick" + counter)
+            // console.log("tick" + counter)
            setCounter((state) => state + 1)
         }, 1000)
 

@@ -5,18 +5,18 @@ export const UseEffectTest = () => {
     let [fake, setFake] = useState(1)
     let [counter, setCounter] = useState(1)
 
-    console.log("test1")
+    // console.log("test1")
 
     useEffect(() => {
-        console.log("useEff test всегда рендер")
+        // console.log("useEff test всегда рендер")
         document.title = String(counter)
     })
     useEffect(() => {
-        console.log("useEff test только при первом рендере (componentDidMount")
+        // console.log("useEff test только при первом рендере (componentDidMount")
         document.title = String(counter)
     }, [])
     useEffect(() => {
-        console.log("useEff test всегда и при изменении counter ")
+        // console.log("useEff test всегда и при изменении counter ")
         document.title = String(counter)
     }, [counter])
 

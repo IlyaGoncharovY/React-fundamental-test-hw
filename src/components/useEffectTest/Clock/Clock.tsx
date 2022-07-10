@@ -1,10 +1,14 @@
 import React, {useEffect, useState} from 'react';
+import {DigitalClock} from "./DigitalClock";
+import {AnalogClock} from "./AnalogClock";
 
-type PropsType = {}
-
-const getTimerString = (num: number) => num < 10
-    ? "0" + num
-    : num
+type PropsType = {
+     title: "digital" | "analog"
+}
+//
+// const getTimerString = (num: number) => num < 10
+//     ? "0" + num
+//     : num
 
 
 export const Clock: React.FC<PropsType> = (props) => {
@@ -22,15 +26,27 @@ export const Clock: React.FC<PropsType> = (props) => {
 
     }, [])
 
+    // const setClockHandler = () => {
+    //     let view
+    //     switch (props.title) {
+    //         case "analog":
+    //             view = <AnalogClock /*title={"analog"}*/ date={date}/>
+    //             break
+    //         case "digital":
+    //         default:
+    //             view = <DigitalClock title={"digital"} date={date}/>
+    //     }
+    // }
+
+
+
     return (
         <div>
-            <span>{getTimerString(date.getHours())}</span>
-            :
-            <span>{getTimerString(date.getMinutes())}</span>
-            :
-            <span>{getTimerString(date.getSeconds())}</span>
-            .
+            {/*<button onClick={setClockHandler}>Change clock</button>*/}
+            <AnalogClock title={"analog"} date={date}/>
+            <DigitalClock title={"digital"} date={date}/>
         </div>
     );
 };
+
 
